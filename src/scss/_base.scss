@@ -10,7 +10,10 @@ body {
   line-height: 1.5rem;
   color: $grey;
   background-color: $primary;
-  
+  @include sm {
+    font-size: $fs-xs;
+    line-height: 1.2rem;
+  }
 }
 
 ul {
@@ -23,6 +26,9 @@ a {
   font-size: $fs-m;
   outline: 0;
   cursor: pointer; 
+  @include sm {
+    font-size: $fs-s;
+  }
 }
 
 

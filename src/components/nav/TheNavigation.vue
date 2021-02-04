@@ -80,9 +80,9 @@ export default {};
 
 header {
   box-shadow: 0 4px 12px -5px $secondary;
-  grid-row: 1/2;
   display: flex;
   align-items: center;
+  height: 5rem;
   padding: 0 3rem;
   @include sm {
     height: 4rem;
@@ -205,9 +205,19 @@ header {
         left: 2.3rem;
         border-radius: 50%;
         font-size: $fs-s;
+        @include md {
+          width: 1rem;
+          height: 1rem;
+          top: 1.3rem;
+          left: 1.5rem;
+          font-size: $fs-xs;
+        }
         & span {
           display: block;
           margin: 0.23rem auto;
+          @include md {
+               margin: .13rem auto;
+          }
         }
       }
       & ion-icon {
